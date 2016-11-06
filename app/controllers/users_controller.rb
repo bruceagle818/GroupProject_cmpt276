@@ -4,6 +4,7 @@ class UsersController < ApplicationController
   end
 
   def index
+    @user = User.all
   end
 
   def create
@@ -28,7 +29,7 @@ class UsersController < ApplicationController
   end
 
   def destroy
-    
+
   end
 
 
@@ -39,11 +40,3 @@ class UsersController < ApplicationController
                                    :password_confirmation)
     end
 end
-
-
-
-
-
-
-
-
